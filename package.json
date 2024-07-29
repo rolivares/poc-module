@@ -4,7 +4,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "serve:local": "ng serve --configuration local --ssl --ssl-key .\\certs\\localhost.key --ssl-cert .\\certs\\localhost.crt",
+    "build": "ng build --configuration=production --delete-output-path=true --subresource-integrity --named-chunks=true --aot --base-href /SipWebNew_QA/v87-a16/ ",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
